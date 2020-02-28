@@ -65,6 +65,28 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
+    dry-configurable (0.11.3)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.4, >= 0.4.7)
+      dry-equalizer (~> 0.2)
+    dry-container (0.7.2)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 0.1, >= 0.1.3)
+    dry-core (0.4.9)
+      concurrent-ruby (~> 1.0)
+    dry-equalizer (0.3.0)
+    dry-inflector (0.2.0)
+    dry-logic (1.0.6)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.2)
+      dry-equalizer (~> 0.2)
+    dry-types (1.3.1)
+      concurrent-ruby (~> 1.0)
+      dry-container (~> 0.3)
+      dry-core (~> 0.4, >= 0.4.4)
+      dry-equalizer (~> 0.3)
+      dry-inflector (~> 0.1, >= 0.1.2)
+      dry-logic (~> 1.0, >= 1.0.2)
     erubi (1.6.1)
     excon (0.58.0)
     execjs (2.7.0)
@@ -212,6 +234,13 @@ GEM
     formatador (0.2.5)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
+    grape (1.3.0)
+      activesupport
+      builder
+      dry-types (>= 1.1)
+      mustermann-grape (~> 1.0.0)
+      rack (>= 1.3.0)
+      rack-accept
     guard (2.13.0)
       formatador (>= 0.2.4)
       listen (>= 2.7, <= 4.0)
@@ -257,6 +286,10 @@ GEM
       minitest (>= 5.0)
       ruby-progressbar
     multi_json (1.12.1)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    mustermann-grape (1.0.1)
+      mustermann (>= 1.0.0)
     nenv (0.3.0)
     nio4r (2.1.0)
     nokogiri (1.8.0)
@@ -271,6 +304,8 @@ GEM
       slop (~> 3.4)
     puma (3.9.1)
     rack (2.0.3)
+    rack-accept (0.4.5)
+      rack (>= 0.4)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.1.2)
@@ -310,6 +345,7 @@ GEM
       nokogiri (~> 1.5)
       trollop (~> 2.1)
     ruby-progressbar (1.8.1)
+    ruby2_keywords (0.0.2)
     sass (3.5.1)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -370,6 +406,7 @@ DEPENDENCIES
   coffee-rails (= 4.2.2)
   faker (= 1.7.3)
   fog (= 1.40.0)
+  grape
   guard (= 2.13.0)
   guard-minitest (= 2.4.4)
   jbuilder (= 2.7.0)
@@ -392,4 +429,4 @@ DEPENDENCIES
   will_paginate (= 3.1.5)
 
 BUNDLED WITH
-   1.15.3
+   1.17.2
